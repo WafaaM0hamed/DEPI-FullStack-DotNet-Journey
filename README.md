@@ -1,3 +1,4 @@
+
 # 🎓 DEPI .NET Full Stack Development Journey
 
 مرحبًا بك في المستودع الرسمي لتوثيق رحلتي التعليمية ضمن **منحة DEPI**، والتي أركز فيها على مسار **Full Stack Development باستخدام .NET**. هذا المستودع يجمع كل مراحل التعلم، المشاريع العملية، الموارد التعليمية، والتوثيق اليومي بطريقة منظمة واحترافية.
@@ -33,45 +34,44 @@
 
 ## 🗂️ هيكل المستودع
 
-
+```
 DEPI-FullStack-DotNet-Journey/
 │
-├── README.md ← هذا الملف
-├── .github/ ← قوالب Issues و PRs
-│ ├── ISSUE_TEMPLATE/
-│ │ ├── bug_report.md
-│ │ └── feature_request.md
-│ └── PULL_REQUEST_TEMPLATE.md
+├── README.md                   ← هذا الملف
+├── .github/                    ← قوالب Issues و PRs
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   └── PULL_REQUEST_TEMPLATE.md
 │
-├── Learning-Path/ ← تقدم التعلم أسبوعيًا
-│ ├── Week-01/
-│ ├── Week-02/
-│ └── ...
+├── Learning-Path/              ← تقدم التعلم أسبوعيًا
+│   ├── Week-01/
+│   ├── Week-02/
+│   └── ...
 │
-├── Projects/ ← المشاريع العملية
-│ ├── Project-01_TodoApp/
-│ │ ├── README.md
-│ │ ├── src/
-│ │ └── docs/
-│ ├── Project-02_Ecommerce/
-│ └── ...
+├── Projects/                   ← المشاريع العملية
+│   ├── Project-01_TodoApp/
+│   │   ├── README.md
+│   │   ├── src/
+│   │   └── docs/
+│   ├── Project-02_Ecommerce/
+│   └── ...
 │
-├── Resources/ ← مصادر تعليمية
-│ ├── Books/
-│ ├── Tutorials/
-│ └── Links.md
+├── Resources/                  ← مصادر تعليمية
+│   ├── Books/
+│   ├── Tutorials/
+│   └── Links.md
 │
-├── Documentation/ ← توثيق تقني
-│ ├── Architecture.md
-│ ├── Setup-Guide.md
-│ └── Tech-Stack.md
+├── Documentation/              ← توثيق تقني
+│   ├── Architecture.md
+│   ├── Setup-Guide.md
+│   └── Tech-Stack.md
 │
-└── DevLogs/ ← يوميات التطور
-├── 2025-07-19.md
-├── 2025-07-20.md
-└── ...
-
------
+└── DevLogs/                    ← يوميات التطور
+    ├── 2025-07-19.md
+    ├── 2025-07-20.md
+    └── ...
+```
 
 ---
 
@@ -104,8 +104,21 @@ DEPI-FullStack-DotNet-Journey/
 
 يتم إنشاء ملف يومي في مجلد `DevLogs/` يحتوي على:
 
-----
+```
+# 📅 [تاريخ اليوم]
 
+## ✅ المهام المنجزة
+- مثال: تطبيق مفهوم الـ OOP في C#
+
+## ⚠️ التحديات
+- مثال: صعوبة في فهم Delegates
+
+## 💡 الحلول
+- مثال: مراجعة فيديو + تجربة كود عملي
+
+## ⭐ الإنجازات
+- أول نموذج بيانات يعمل بالكامل
+```
 
 ---
 
@@ -124,8 +137,10 @@ DEPI-FullStack-DotNet-Journey/
 - 🏅 Badges باستخدام [Shields.io](https://shields.io)  
   - مثال: `![Progress](https://img.shields.io/badge/Progress-50%25-yellow)`  
 - 📊 Progress Bars:
-
----
+```
+### ASP.NET Core Progress
+██████████░░░░░░░░ 50%
+```
 
 ---
 
