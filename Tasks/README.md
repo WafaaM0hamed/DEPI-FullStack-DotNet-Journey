@@ -1,57 +1,77 @@
+<h1 align="center">📋 Task & Progress Tracker — DEPI .NET Full Stack Journey 🚀</h1>
 
-# ✅ Task Management - DEPI .NET Full Stack Journey
-
-This section documents the full breakdown of tasks, weekly milestones, and progress tracking for my DEPI Full Stack Development learning path using .NET.
-
----
-
-## 📅 Weekly Learning Tasks
-
-| Week | Topics & Focus Areas                      | Status   | Notes                                |
-|------|-------------------------------------------|----------|--------------------------------------|
-| 1    | C# Syntax, Variables, Conditions, Loops   | ✅ Done   | Practiced basics with exercises      |
-| 2    | OOP, Classes, Inheritance, Interfaces     | ✅ Done   | Built small OOP apps                 |
-| 3    | ASP.NET MVC, Routing, Razor Views         | 🔄 Ongoing| Blog system in progress              |
-| 4    | Entity Framework, LINQ, DB Migrations     | ⏳ Next   | Setup local SQL Server               |
-| 5    | Web API, Postman, RESTful Services        | ⏳ Next   | Planning API-based task manager      |
-| 6    | Authentication, Authorization, Identity   | ⏳ Next   | To be integrated in final project    |
-| 7+   | Final Project, Deployment, Documentation  | ⏳ Next   | Full stack capstone                  |
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square&logo=github" />
+  <img src="https://img.shields.io/badge/Framework-ASP.NET-blue?style=flat-square&logo=dotnet" />
+  <img src="https://img.shields.io/badge/Language-C%23-blueviolet?style=flat-square&logo=csharp" />
+</p>
 
 ---
 
-## 🔧 Task Types
+## 📆 Weekly Breakdown
 
-| Label           | Description                                  |
-|-----------------|----------------------------------------------|
-| `learning`      | Learning a new concept or framework          |
-| `project`       | Working on hands-on practical implementation |
-| `bug`           | Issues encountered during implementation     |
-| `enhancement`   | Improving previous code or UI                |
-| `documentation` | Writing or updating technical docs           |
-| `review`        | Code review or project reflection            |
+> A structured timeline of what I’ve learned — and what’s next. Tracked weekly to stay focused and consistent.
 
----
-
-## 🧠 Milestone Example
-
-**Milestone: Week 3 - ASP.NET MVC**
-- [x] Understand MVC structure
-- [x] Create simple views using Razor
-- [x] Setup routing for basic pages
-- [ ] Implement form submissions
-- [ ] Validate user input
+| ✅ Week | 🎯 Focus Area                              | 📌 Status   | 📝 Notes                              |
+|--------|---------------------------------------------|------------|----------------------------------------|
+| 1️⃣     | C# Basics: Variables, Conditions, Loops     | ✅ Done     | Practiced with console apps            |
+| 2️⃣     | OOP: Classes, Interfaces, Abstraction       | ✅ Done     | Implemented mini OOP projects          |
+| 3️⃣     | ASP.NET MVC: Routing, Views, Controllers    | 🔄 Ongoing  | Blog system WIP                        |
+| 4️⃣     | Entity Framework Core + Migrations          | ⏳ Upcoming | Setting up SQL Server + Code First     |
+| 5️⃣     | Web API, JSON, Postman                      | ⏳ Upcoming | Starting API-based task manager        |
+| 6️⃣     | Authentication + Identity                   | ⏳ Upcoming | To be added in main project            |
+| 7️⃣+    | Final Project, Hosting, Docs                | ⏳ Upcoming | Capstone full-stack project            |
 
 ---
 
-## 🚀 Tools Used
+## 🧩 Task Labels Guide
 
-- **GitHub Issues** for detailed task creation and tracking  
-- **GitHub Projects** for kanban-style workflow  
-- **Labels** to categorize and prioritize tasks  
-- **Milestones** to group weekly goals
+Each task on GitHub Issues is tagged with clear labels for easy tracking:
+
+| 🏷️ Label          | 📖 Description                                     |
+|-------------------|----------------------------------------------------|
+| `learning`         | Studying new concepts, syntax, or tools            |
+| `project`          | Hands-on coding projects                           |
+| `bug`              | Errors or technical issues encountered             |
+| `enhancement`      | Improvements or feature updates                    |
+| `documentation`    | Writing or editing supporting documents            |
+| `review`           | Code review or self-reflection                     |
 
 ---
 
-> “Small consistent steps lead to big results.”  
-> — This task board is a map of growth 💡
+## 📍 Sample Milestone Breakdown
 
+### 🎯 Milestone: Week 3 — ASP.NET MVC
+
+- [x] Setup MVC architecture  
+- [x] Create Razor Views  
+- [x] Implement Controllers  
+- [ ] Handle form submissions  
+- [ ] Add validation with Data Annotations  
+
+🛠️ Progress: `60%` complete
+
+---
+
+## 📊 Workflow & Tools
+
+🔧 **GitHub Projects:**  
+Organized tasks using Kanban board (To Do | In Progress | Done)
+
+🔖 **Labels & Filters:**  
+Clear visual categorization (feature, bug, learning, etc.)
+
+📌 **Milestones:**  
+Grouped goals for each learning phase (weekly/monthly)
+
+🗂️ **Dev Logs:**  
+Logged daily updates & reflections in `/DevLogs`
+
+---
+
+## 🧠 Motivation
+
+> "Plan the work. Work the plan."  
+> — Staying productive and accountable through structured task tracking.
+
+🎯 Each task brings me closer to mastering .NET Full Stack!
