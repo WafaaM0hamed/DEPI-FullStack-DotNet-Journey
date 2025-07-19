@@ -75,3 +75,13 @@ Logged daily updates & reflections in `/DevLogs`
 > — Staying productive and accountable through structured task tracking.
 
 🎯 Each task brings me closer to mastering .NET Full Stack!
+
+
+---
+
+## 🚀 Goals & Motivation
+
+> "Success is the sum of small efforts repeated daily." — Robert Collier
+
+This task board is my daily motivation map — guiding my growth into a professional Full Stack .NET Developer 🌟  
+
