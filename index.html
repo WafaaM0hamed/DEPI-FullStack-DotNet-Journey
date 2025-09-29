@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Happy Bakery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --brown-dark: #3e2723; /* Dark brown */
+            --brown-medium: #6d4c41; /* Medium brown */
+            --beige-light: #f5f5dc; /* Light beige */
+            --beige-offwhite: #fefcf3; /* Off-white */
+            --gold-accent: #b8860b; /* Golden accent */
+        }
+        
+        body {
+            font-family: 'Amiri', serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--beige-offwhite);
+            color: var(--brown-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Navigation Bar --- */
+        .navbar {
+            background-color: var(--brown-dark);
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: var(--gold-accent);
+        }
+
+        /* --- Hero Section (Background Image) --- */
+        .hero-section {
+            background-image: url('423bf36c-47f2-49bc-9cf7-28664d9a566e.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 4em;
+            margin-bottom: 10px;
+            color: var(--gold-accent);
+        }
+
+        .hero-section p {
+            font-size: 1.8em;
+            margin-top: 0;
+            max-width: 800px;
+        }
+
+        /* --- General Section Styling --- */
+        .about-us, .products, .location, .contact {
+            padding: 80px 0;
+            background-color: var(--beige-light);
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content, .location-content, .contact-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-direction: row; /* Changed to left-to-right */
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .about-content .text, .location-content .text {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            text-align: left; /* Changed to left alignment */
+        }
+
+        .about-content .image, .location-content .image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content .image img, .location-content .image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .about-content h2, .location-content h2, .contact-content h2, .products h2 {
+            font-size: 2.5em;
+            color: var(--brown-medium);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .about-us .container > p, .products .container > p {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+            color: var(--brown-medium);
+        }
+
+        .about-list {
+            list-style: none;
+            padding: 0;
+            text-align: left; /* Changed to left alignment */
+        }
+
+        .about-list li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Aligned icon and text to left */
+        }
+
+        .about-list li i {
+            color: var(--gold-accent);
+            margin-right: 10px; /* Space between icon and text */
+        }
+
+        /* --- Products Section --- */
+        .products {
+            text-align: center;
+        }
+        
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            background-color: var(--beige-offwhite);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            font-size: 1.5em;
+            color: var(--brown-medium);
+            margin-top: 0;
+        }
+        
+        /* --- Contact Section --- */
+        .contact {
+            text-align: center;
+        }
+
+        .contact-content {
+            display: flex;
+            justify-content: center;
+            flex-direction: row; /* Changed to left-to-right */
+            flex-wrap: wrap;
+        }
+
+        .contact-details, .map-placeholder {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .contact-details ul {
+            list-style: none;
+            padding: 0;
+            text-align: left; /* Changed to left alignment */
+        }
+        
+        .contact-details ul li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        
+        .contact-details ul li i {
+            margin-right: 15px;
+            color: var(--gold-accent);
+            font-size: 1.2em;
+        }
+
+        .map-placeholder {
+            background-color: var(--beige-light);
+            border-radius: 15px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--brown-medium);
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        /* --- Footer Section --- */
+        .footer {
+            background-color: var(--brown-dark);
+            color: #f0f0f0;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .footer-grid {
+            display: flex;
+            justify-content: space-around;
+            text-align: left; /* Changed to left alignment */
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .footer-col {
+            min-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: var(--gold-accent);
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+        
+        .footer-col ul li i {
+            margin-right: 8px;
+            color: var(--gold-accent);
+        }
+
+        .footer-logo {
+            font-size: 2em;
+            color: var(--gold-accent);
+            margin-top: 20px;
+        }
+        
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 350px;
+            }
+            .hero-section h1 {
+                font-size: 2.5em;
+            }
+            .hero-section p {
+                font-size: 1.2em;
+            }
+            .navbar ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .about-content, .location-content, .contact-content {
+                flex-direction: column-reverse;
+            }
+            .about-content .image, .location-content .image {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .about-content .text, .location-content .text, .contact-details, .map-placeholder {
+                width: 100%;
+                padding: 0 10px;
+            }
+            .footer-grid {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .footer-col ul {
+                text-align: center;
+            }
+            .footer-col ul li {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#location">Our Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <h1>The Happy Bakery</h1>
+            <p>Fresh bread, delicious sweets, and an unforgettable taste.</p>
+        </div>
+    </section>
+    
+    <section class="about-us" id="about-us">
+        <div class="container">
+            <h2>Who We Are?</h2>
+            <p>Our bakery is more than just a place for bread; it's a story of passion that spans over 30 years. We are part of family heritage, baking with pride and love to offer you the most delicious products day after day. Our mission is to provide you with the freshest and finest homemade baked goods.</p>
+            <div class="about-content">
+                <div class="image">
+                    <img src="dd964f0a-2321-428f-9766-393c6cd41dcb.jpeg" alt="Who We Are"> 
+                </div>
+                <div class="text">
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> We pay attention to the smallest details in every piece.</li>
+                        <li><i class="fas fa-check-circle"></i> We use the finest natural ingredients.</li>
+                        <li><i class="fas fa-check-circle"></i> Our bakery has won numerous awards.</li>
+                        <li><i class="fas fa-check-circle"></i> Our customer service is the best.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="container">
+            <h2>Our Signature Products</h2>
+            <p>Explore our diverse range of products, made with love and perfection.</p>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="44850ed1-bd50-4b98-b649-4b3347cd183d.jpeg" alt="Superior Breads"> 
+                <div class="product-info">
+                        <h3> Breads</h3>
+                        <p>Our daily fresh bread, made from the best whole grains to offer a healthy and delicious taste.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="85984f4f-c7ca-40f3-b727-ed7b857c30ab.jpeg" alt="Donuts"> 
+                <div class="product-info">
+                        <h3>Donuts</h3>
+                        <p>Soft donuts topped with chocolate or sugar, perfect to enjoy with a cup of coffee.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="Dark Chocolate Cookies_ Easy Recipe Varieties For Family Treats.jpeg" alt="Cookies"> 
+                <div class="product-info">
+                        <h3>Cookies</h3>
+                        <p>Cookies stuffed with chocolate chips, ideal as a snack with an irresistible taste.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location" id="location">
+        <div class="container">
+            <h2>Our Location</h2>
+            <p>We've been operating for over 30 years and have built a large customer base in **Derb Negm**.</p>
+            <div class="location-content">
+                <div class="image">
+                    <img src="702c78f9-a649-4fb2-8bb6-ef8538a96c9d.jpeg" alt="Our Location"> 
+                </div>
+                <div class="text">
+                    <p>We are happy to serve you every day and hope to continue providing our best.</p>
+                    <p>You can visit us at any time. We guarantee you a unique and enjoyable shopping experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>You can contact us through the following methods:</p>
+            <div class="contact-content">
+                <div class="contact-details">
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Address: 123 Happiness Street, **Derb Negm**, Sharqia</li>
+                        <li><i class="fas fa-phone-alt"></i> Phone: +20 114 967 2877</li>
+                        <li><i class="fas fa-envelope"></i> Email: info@bakery.com</li>
+                    </ul>
+                </div>
+                <div class="map-placeholder">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13715.228008204005!2d31.459905711935075!3d30.751922283830243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f78d65443c8c09%3A0xc1f61ff25eed8e82!2z2K_Zitix2Kgg2YbYrNmF2Iwg2YXYrdin2YHYuNipINin2YTYtNix2YLZitip!5e0!3m2!1sar!2seg!4v1759165203115!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p>Our success story began years ago, and we still bake with love to make you smile.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Why are we special?</h4>
+                    <ul>
+                        <li><i class="fas fa-star"></i> Our products are fresh daily</li>
+                        <li><i class="fas fa-heart"></i> We care about ingredient quality</li>
+                        <li><i class="fas fa-award"></i> We are award-winning</li>
+                        <li><i class="fas fa-smile"></i> Excellent customer service</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li><i class="fas fa-clock"></i> Sun - Thu: 9am - 9pm</li>
+                        <li><i class="fas fa-clock"></i> Fri: 10am - 5pm</li>
+                        <li><i class="fas fa-clock"></i> Sat: 10am - 8pm</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Details</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Address: 123 Happiness Street, **Derb Negm**</li>
+                        <li><i class="fas fa-phone-alt"></i> Phone: +20 114 967 2877</li>
+                        <li><i class="fas fa-envelope"></i> Email: info@bakery.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <i class="fas fa-bread-slice"></i> The Happy Bakery
+            </div>
+            <p style="font-size: 0.9em; margin-top: 10px;">&copy; 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
